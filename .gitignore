@@ -1,3 +1,8 @@
+# server specific
+public_html/.htaccess
+public_html/index.php
+include/config/db.php
+
 # phpstorm project files
 .idea
 
