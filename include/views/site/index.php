@@ -14,7 +14,8 @@
                     <br>
                     <a href="https://www.linkedin.com/in/bajabob" target="_blank" class="btn btn-lg btn-primary"><i class="fa fa-download"> Android Developer</i></a>
                     <br><br><br>
-                    <span class="skills">I enrolled in Computers & New Media to study the strategies users implement when interacting with digital content. This will help me create and deliver more intuitive products in the future.</span>
+                    <span class="skills">I enrolled in Computers & New Media to study the strategies users implement when interacting with digital content.
+                        As an app developer I want to deliver experiences that surpass the user's expectations.</span>
 
                     <br><br>
                     <p class="skills">Here for the first time? Get started with <?= Html::a('Assignment I', ['site/a1']) ?></p>
