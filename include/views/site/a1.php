@@ -25,6 +25,7 @@ use yii\helpers\Html;
 
                 <h3>Magazine</h3>
                 <?= Html::img(['/img/a1/news/magazine/1.png'], ['class' => 'img-rounded img-responsive']) ?>
+                <?= Html::img(['/img/a1/news/magazine/2.png'], ['class' => 'img-rounded img-responsive']) ?>
             </div>
 
             <div class="col-md-4 text-center">
@@ -38,6 +39,7 @@ use yii\helpers\Html;
                 <h3>Reality</h3>
                 <?= Html::img(['/img/a1/television/reality/1.png'], ['class' => 'img-rounded img-responsive']) ?>
                 <?= Html::img(['/img/a1/television/reality/2.png'], ['class' => 'img-rounded img-responsive']) ?>
+                <?= Html::img(['/img/a1/television/reality/3.png'], ['class' => 'img-rounded img-responsive']) ?>
 
                 <h3>Science Fiction</h3>
                 <?= Html::img(['/img/a1/television/scifi/1.png'], ['class' => 'img-rounded img-responsive']) ?>
