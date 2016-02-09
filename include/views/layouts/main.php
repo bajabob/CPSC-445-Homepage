@@ -30,6 +30,7 @@ AppAsset::register($this);
 
     <!-- Custom CSS -->
     <link href="/css/freelancer.css" rel="stylesheet">
+    <link href="http://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -64,9 +65,8 @@ AppAsset::register($this);
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <?= Html::a('Assignment I', ['site/a1']) ?>
-                    </li>
+                    <li class="page-scroll"><?= Html::a('Assignment I', ['site/a1']) ?></li>
+                    <li class="page-scroll"><?= Html::a('Assignment II', ['site/a2']) ?></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -118,21 +118,22 @@ AppAsset::register($this);
         </a>
     </div>
 
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="/js/classie.js"></script>
-    <script src="/js/cbpAnimatedHeader.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="/js/freelancer.js"></script>
 
 <?php $this->endBody() ?>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="/js/classie.js"></script>
+<script src="/js/cbpAnimatedHeader.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/freelancer.js"></script>
+
+<script src="http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
 </body>
 
 <?php $this->endPage() ?>

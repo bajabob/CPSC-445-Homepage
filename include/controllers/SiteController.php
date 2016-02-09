@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\models\A2People;
+use app\models\A2PeopleTags;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -55,5 +57,22 @@ class SiteController extends Controller
     public function actionA1()
     {
         return $this->render('a1');
+    }
+
+    public function actionA2()
+    {
+
+        $people = A2People::find()
+            ->indexBy('id')
+            ->all();
+
+        $toSend = array();
+
+        foreach($people as $p){
+            array_push($toSend, ['person' => $p, 'tags' => A2PeopleTags::getAllByPeopleId($p->id)]);
+        }
+
+
+        return $this->render('a2', ['people' => $toSend]);
     }
 }
